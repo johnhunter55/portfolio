@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Hunter</title>
+  <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about me</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+  <header class="head">
+    <div class="textbaby">
+      <div class="text">
+        <h1>John Hunter</h1>
+        <h2>Website Coder and Designer</h2>
+        <h3>
+          I am currently available for hire and deeply passionate about web development.
+          I hold Google certifications that validate my expertise in creating innovative, user-friendly digital experiences.
+        </h3>
+      </div>
+    </div>
+    <div class="baby">
+      <div class="img_profile">
+        <img src="IMG_8915.jpg" alt="profile picture" />
+      </div>
+    </div>
+</header>
+  <div class="containerforcontainer">
+    <div class="container">
+            <div class="items">
+                <img src="DSC_6464.jpeg" alt="runnercard website">
+                
+                <a href="http://john5bb.com/runnercard" class="image-link" target="_blank">Made a photo gallery for the company runnercard with directorys and thumbnails</a>
+            </div>
+            
+            <div class="items">
+                <img src="IMG_2736.JPG" alt="photo gallery">
+            </div>
+            <div class="items">
+                <img src="google.png" alt="google certificate">
+            </div>
+            <div class="items">
+                <img src="IMG_0580.jpg" alt="filler">
+            </div>
+            <div class="items">item 5</div>
+            <div class="items">item 6</div>
+        </div>
+</div>
+    </body>
+</html>
