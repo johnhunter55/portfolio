@@ -15,6 +15,7 @@
         </ul>
     </nav>
   <header class="head">
+    <div class="space"></div>
     <div class="textbaby">
       <div class="text">
         <h1>John Hunter</h1>
