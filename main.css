@@ -15,14 +15,15 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     width: 100%; 
-    font-size: clamp(.5rem, calc(1.8vw + 1rem), 2rem);
+    font-size: clamp(1rem, calc(2vw + 0.5rem), 2rem); /* Adjust font size */
     background-color: #9d9d87;
 }
 .navlinks{
     list-style: none;
     display: flex;
     gap: 8vw;
-    margin: 20px 0;
+    margin-top: clamp(0.1rem, calc(0.5vw + 0.6rem), 2rem);
+    margin-bottom: clamp(0.1rem, calc(0.5vw + 0.5rem), 2rem); 
     padding: 0px;
     line-height: 1;
 }
@@ -30,7 +31,7 @@ h1, h2, h3 {
 
 .navlinks li a {
     text-decoration: none;
-    color: #eee0b6;
+    color: #f0e0b2;
     font-weight: 700;
 }
 
@@ -57,16 +58,12 @@ h3{
     margin-top: auto;
 }
 
-.space{
-    width: 30%;
-    height: 1vw;
-}
-
 .textbaby {
     width: 100%;
     display: flex;
     max-height: 350px;
     justify-content: space-between;
+    margin-left: 15%;
 }
 
 .text {
@@ -85,6 +82,7 @@ h3{
     overflow: hidden;
     margin: 10px;
     width: 100%;
+    margin-left: 10%;
 }
 
 
@@ -107,7 +105,7 @@ h3{
 
 h1{
     font-weight: 800;
-    background: linear-gradient(to bottom, #9d9d87, #eee0b6, #bf935c);
+    background: linear-gradient(to bottom, #9d9d87, #bf935c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: clamp(2.8rem, calc(4.5vw + 1rem), 5.5rem);
@@ -119,20 +117,21 @@ h1{
 h2{
     font-size: clamp(.5rem, calc(1.8vw + 1rem), 2.5rem);
     font-weight: 500;
-    margin-top: 0px;
+    margin-top: -2%;
     margin-bottom: 2%;
 }
 
 .containerforcontainer{
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .container{
     margin-top: 50px;
     width: 88%;
     padding: 30px;
-    background-color: #Eee0b6;
+    background-color: #f0e0b2;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
     margin-bottom: 50px;
@@ -140,7 +139,7 @@ h2{
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(555px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); 
     justify-content: center; /* Centers last row */
     gap: 16px;
 }
@@ -162,31 +161,113 @@ h2{
     border-radius: 10px;
 }
 
-.image-link {
-    display: flex;
-    position: absolute;
-    color: #ecd8a5;
-    font-size: 30px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-.items:hover .image-link {
-    opacity: 1; /* Show text on hover */
-    background-color: #2b2b2be5;
-}
-
-@media (max-width: 500px) {
-    /* Ensure the images adjust properly in smaller screens */
-    .space{
-        display: none;
+@media (hover: hover){
+    .image-link {
+        display: flex;
+        position: absolute;
+        color: #f0e0b2;
+        font-size: 30px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
     }
+    
+    .items:hover .image-link {
+        opacity: 1; /* Show text on hover */
+        background-color: #2b2b2be5;
+    }
+}
+
+@media (hover: none) {
+    /* Styles for touchscreen devices */
+    .container{
+        display: grid;
+        background-color: transparent; /* Removes the background color */
+        box-shadow: none; /* Removes the shadow */
+        margin-top: 0;
+        
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column; /* Stacks the image and the text box vertically */
+        position: relative;
+        height: auto;    
+        justify-content: flex-start; /* Keep content at the top of the container */
+    }
+    
+    .image-container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column; /* Stack the image and text box vertically */
+    }
+    
+    .image-container img {
+        width: 100%;
+        aspect-ratio: 53%; /* You can adjust this to the desired proportion */
+        border-radius: 10px;
+    }
+    
+    .image-text {
+        width: 100%;
+        background-color: #9d9d87; /* Choose a color for the background of the text box */
+        text-align: center;
+        border-radius: 0px 0px 10px 10px; /* Optional: rounds the top corners of the text box */
+        margin-top: -15px; /* Adds space between the image and the box */
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .image-link {
+        font-style: italic;
+        display: block;
+        text-decoration: none;
+        width: 95%;
+        color: #f0e0b2; /* Set text color */
+        font-weight: 700;
+        font-size: clamp(1rem, calc(2vw + 0.5rem), 2rem); /* Adjust font size */
+        margin: auto;
+    }
+    
+    .image-link:hover {
+        color: rgb(56, 56, 56);
+    }
+}
+
+
+
+@media (max-width: 1064px){
+    .textbaby{
+        margin-left: 10%;
+    }
+    .baby{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 629px){
+    .container{
+        background-color: transparent; /* Removes the background color */
+        box-shadow: none; /* Removes the shadow */
+        margin-top: 0;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    .textbaby{
+        margin-left: 20px;
+    }
+    .baby{
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 520px) {
     .textbaby{
         margin-left: 20px;
     }
@@ -199,9 +280,18 @@ h2{
     }
     .textbaby{
         margin-right: 10px;
-        margin-left: 15px;
+        margin-left: 10px;
         text-align: center;
+    }
+    h1{
+        font-size: 50px;
+        padding-bottom: 20px;
+        padding-top: 10px;
     }
 }
 
-
+@media (min-width: 2100px){
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(555px, 1fr)); 
+    }
+}

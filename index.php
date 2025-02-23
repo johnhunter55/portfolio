@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/png" href="favicon.ico">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>John Hunter</title>
@@ -15,7 +16,6 @@
         </ul>
     </nav>
   <header class="head">
-    <div class="space"></div>
     <div class="textbaby">
       <div class="text">
         <h1>John Hunter</h1>
@@ -34,24 +34,26 @@
 </header>
   <div class="containerforcontainer">
     <div class="container">
-            <div class="items">
+        <div class="items">
+            <div class="image-container">
                 <img src="DSC_6464.jpeg" alt="runnercard website">
-                
+            </div>
+            <div class="image-text">    
                 <a href="http://john5bb.com/runnercard" class="image-link" target="_blank">Made a photo gallery for the company runnercard with directorys and thumbnails</a>
             </div>
-            
-            <div class="items">
-                <img src="IMG_2736.JPG" alt="photo gallery">
-            </div>
-            <div class="items">
-                <img src="google.png" alt="google certificate">
-            </div>
-            <div class="items">
-                <img src="IMG_0580.jpg" alt="filler">
-            </div>
+        </div>
+        <div class="items">
+            <img src="IMG_2736.JPG" alt="photo gallery">
+        </div>
+        <div class="items">
+            <img src="google.png" alt="google certificate">
+        </div>
+        <div class="items">
+            <img src="IMG_3525.jpg" alt="filler">
+        </div>
             <div class="items">item 5</div>
             <div class="items">item 6</div>
         </div>
-</div>
-    </body>
+    </div>
+</body>
 </html>
