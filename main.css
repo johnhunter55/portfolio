@@ -15,8 +15,8 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     width: 100%; 
-    font-size: clamp(1rem, calc(2vw + 0.5rem), 2rem); /* Adjust font size */
-    background-color: #9d9d87;
+    font-size: clamp(1.5rem, calc(1.1vw + 0.5rem), 2rem); /* Adjust font size */
+    background-color: #9d9d87; 
 }
 .navlinks{
     list-style: none;
@@ -44,26 +44,38 @@ h1, h2, h3 {
     color: white;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    max-height: 350px;
+    justify-content: center;
+    height: clamp(13rem, calc(12vw + 1rem), 17rem);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
 h3{
-    font-size: clamp(.1rem, calc(0.2vw + 1rem), 1.4rem);
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: 400;
-    padding: clamp(10px, 1vw, 50px) 0;
-    margin-top: auto;
+    font-size: clamp(1rem, calc(0.7vw + 0.5rem), 1.6rem);
+    font-weight: 350;
+    line-height: 1.1;
 }
 
 .textbaby {
     width: 100%;
     display: flex;
-    max-height: 350px;
-    justify-content: space-between;
+    height: 100%;
     margin-left: 15%;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.texttwo{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.textone{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .text {
@@ -76,18 +88,17 @@ h3{
     max-height: 350px;
 }
 
-  .baby{
+.baby{
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
-    margin: 10px;
     width: 100%;
-    margin-left: 10%;
+    height: 100%;
 }
 
-
 .img_profile {
-    width: clamp(200px, 300px, 400px);
+    height: clamp(12rem, calc(9vw + 1rem), 18rem);
     aspect-ratio: 1 / 1;
     display: flex; /* Ensure content alignment */
     align-items: center;
@@ -105,20 +116,17 @@ h3{
 
 h1{
     font-weight: 800;
-    background: linear-gradient(to bottom, #9d9d87, #bf935c);
+    background: linear-gradient(to bottom, #9d9d87, #f0e0b2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: clamp(2.8rem, calc(4.5vw + 1rem), 5.5rem);
-    padding: clamp(5px, 1vw, 50px) 0;
+    font-size: clamp(2.1rem, calc(3vw + 1rem), 6rem);
     margin: 0 0;
     line-height: 1;
 }
 
 h2{
-    font-size: clamp(.5rem, calc(1.8vw + 1rem), 2.5rem);
+    font-size: clamp(1.1rem, calc(1.5vw + 0.5rem), 3rem);
     font-weight: 500;
-    margin-top: -2%;
-    margin-bottom: 2%;
 }
 
 .containerforcontainer{
@@ -139,7 +147,7 @@ h2{
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
     justify-content: center; /* Centers last row */
     gap: 16px;
 }
@@ -265,17 +273,6 @@ h2{
     }
 }
 
-
-
-@media (max-width: 1064px){
-    .textbaby{
-        margin-left: 10%;
-    }
-    .baby{
-        margin-left: 5%;
-    }
-}
-
 @media (max-width: 629px){
     .container{
         background-color: transparent; /* Removes the background color */
@@ -286,14 +283,11 @@ h2{
     .textbaby{
         margin-left: 20px;
     }
-    .baby{
-        margin-left: 2%;
-    }
 }
 
 @media (max-width: 520px) {
     .textbaby{
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
 
@@ -309,12 +303,10 @@ h2{
     }
     h1{
         font-size: 50px;
-        padding-bottom: 20px;
-        padding-top: 10px;
     }
 }
 
-@media (min-width: 2100px){
+@media (min-width: 1900px){
     .container {
         grid-template-columns: repeat(auto-fit, minmax(555px, 1fr)); 
     }

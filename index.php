@@ -18,12 +18,16 @@
   <header class="head">
     <div class="textbaby">
       <div class="text">
+        <div class="texttwo">
         <h1>John Hunter</h1>
         <h2>Website Coder and Designer</h2>
+        </div>
+        <div class="textone">
         <h3>
           I am currently available for hire and deeply passionate about web development.
           I hold Google certifications that validate my expertise in creating innovative, user-friendly digital experiences.
         </h3>
+    </div>
       </div>
     </div>
     <div class="baby">
