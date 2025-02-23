@@ -249,6 +249,7 @@ h2{
     }
     
     .image-text {
+        height: 100%;
         width: 100%;
         background-color: #f0e0b2; /* Choose a color for the background of the text box */
         text-align: center;
@@ -259,14 +260,18 @@ h2{
     }
     
     .image-link {
-        display: block;
+        display: flex; /* Enables flexbox */
+        align-items: center; /* Centers text vertically */
+        justify-content: center; /* Centers text horizontally */
         text-decoration: none;
         width: 95%;
+        height: 100%; /* Ensure it fills the parent container */
         color: #7a7a69; /* Set text color */
         font-weight: 600;
         font-size: clamp(1rem, calc(2vw + 0.5rem), 2rem); /* Adjust font size */
         margin: auto;
     }
+    
     
     .image-link:hover {
         color: rgb(56, 56, 56);

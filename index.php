@@ -47,16 +47,30 @@
             </div>        
         </div>
         <div class="items">
-            <img src="IMG_2736.JPG" alt="photo gallery">
+            <div class="image-container">
+                <img src="IMG_2736.JPG" alt="photo gallery">
+            </div>  
+            <div class="image-text">    
+                <a href="http://john5bb.com/photos" class="image-link" target="_blank">Made a photo gallery for all of my photos</a>
+            </div>        
         </div>
         <div class="items">
-            <img src="google.png" alt="google certificate">
+            <div class="image-container">
+                <img src="google.png" alt="google certficate">
+            </div>  
+            <div class="image-text">    
+                <a href="https://google.com" class="image-link" target="_blank">got a ux certificat from a google class</a>
+            </div>        
         </div>
         <div class="items">
-            <img src="IMG_3525.jpg" alt="filler">
+            <div class="image-container">
+                <img src="IMG_3525.jpg" alt="video website">
+            </div>  
+            <div class="image-text">    
+                <a href="http://john5bb.com/video" class="image-link" target="_blank">made a video upload page to post clips</a>
+            </div>        
         </div>
             <div class="items">item 5</div>
-            <div class="items">item 6</div>
         </div>
     </div>
 </body>
