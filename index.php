@@ -37,10 +37,10 @@
         <div class="items">
             <div class="image-container">
                 <img src="DSC_6464.jpeg" alt="runnercard website">
-            </div>
+            </div>  
             <div class="image-text">    
                 <a href="http://john5bb.com/runnercard" class="image-link" target="_blank">Made a photo gallery for the company runnercard with directorys and thumbnails</a>
-            </div>
+            </div>        
         </div>
         <div class="items">
             <img src="IMG_2736.JPG" alt="photo gallery">

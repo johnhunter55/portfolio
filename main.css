@@ -162,26 +162,51 @@ h2{
 }
 
 @media (hover: hover){
+    .items {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto; /* Remove fixed height, let it adjust based on content */
+        justify-content: flex-start;
+    }
+
+    .image-container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column; /* Stack the image and text box vertically */
+    }
+
+    /* Overlay will cover the entire image */
     .image-link {
         display: flex;
-        position: absolute;
+        position: absolute;  /* Position overlay absolutely within the parent */
+        top: 0;              /* Start from the top */
+        left: 0;             /* Start from the left */
+        width: 100%;         /* Cover the entire width of the container */
+        height: 100%;        /* Cover the entire height of the container */
+        align-items: center; /* Center text vertically */
+        justify-content: center; /* Center text horizontally */
         color: #f0e0b2;
-        font-size: 30px;
-        opacity: 0;
+        font-size: clamp(2rem, calc(2vw + 0.5rem), 2.5rem); /* Adjust font size */
+        opacity: 0;           /* Hidden by default */
         transition: opacity 0.3s ease-in-out;
-        width: 100%;
-        height: 100%;
-        align-items: center;
+        background-color: #9d9d87f3; /* Semi-transparent overlay */
         text-align: center;
         border-radius: 10px;
         text-decoration: none;
+        padding: 0 5%;
+        box-sizing: border-box;
     }
-    
+
     .items:hover .image-link {
-        opacity: 1; /* Show text on hover */
-        background-color: #2b2b2be5;
+        opacity: 1;  /* Make the overlay visible */
     }
+
 }
+
+
 
 @media (hover: none) {
     /* Styles for touchscreen devices */
@@ -217,7 +242,7 @@ h2{
     
     .image-text {
         width: 100%;
-        background-color: #9d9d87; /* Choose a color for the background of the text box */
+        background-color: #f0e0b2; /* Choose a color for the background of the text box */
         text-align: center;
         border-radius: 0px 0px 10px 10px; /* Optional: rounds the top corners of the text box */
         margin-top: -15px; /* Adds space between the image and the box */
@@ -226,12 +251,11 @@ h2{
     }
     
     .image-link {
-        font-style: italic;
         display: block;
         text-decoration: none;
         width: 95%;
-        color: #f0e0b2; /* Set text color */
-        font-weight: 700;
+        color: #7a7a69; /* Set text color */
+        font-weight: 600;
         font-size: clamp(1rem, calc(2vw + 0.5rem), 2rem); /* Adjust font size */
         margin: auto;
     }
