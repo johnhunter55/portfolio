@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #bf935c;
+    font-family: inter;
+    background-color: #6c4a3f;
     padding: 0;
     margin: 0;
+}
+
+
+.active a{
+    color: #f5f2ea;
 }
 
 h1, h2, h3 {
@@ -15,94 +21,90 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     width: 100%; 
+    height: 65px;
     font-size: clamp(1.5rem, calc(1.1vw + 0.5rem), 2rem); /* Adjust font size */
-    background-color: #9d9d87; 
 }
 .navlinks{
     list-style: none;
     display: flex;
-    gap: 8vw;
-    margin-top: clamp(0.1rem, calc(0.5vw + 0.6rem), 2rem);
-    margin-bottom: clamp(0.1rem, calc(0.5vw + 0.5rem), 2rem); 
+    gap: 12vw;
     padding: 0px;
-    line-height: 1;
 }
 
+.nonactive a{
+    color: #d0c7c2;
+}
 
 .navlinks li a {
     text-decoration: none;
-    color: #f0e0b2;
     font-weight: 700;
 }
 
 .navlinks li a:hover{
-    color: rgb(56, 56, 56);
+    color: tan;
 }
 
 .head{
-    background-color: #2e2c22;
-    color: white;
+    background-color: #4a332d;
     width: 100%;
     display: flex;
     justify-content: center;
-    height: clamp(13rem, calc(12vw + 1rem), 17rem);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    height: 230px;
+    color: #f5f2ea;
 }
 
 h3{
-    font-size: clamp(1rem, calc(0.7vw + 0.5rem), 1.6rem);
-    font-weight: 350;
-    line-height: 1.1;
+    font-size: clamp(0.9rem, calc(1vw + 0.6rem), 1.4rem);
 }
 
-.textbaby {
-    width: 100%;
+.headcontent {
+    width: 88%;
+    max-width: calc(550px * 3);
     display: flex;
     height: 100%;
-    margin-left: 15%;
-    margin-right: 0;
-    padding-right: 0;
 }
 
 .texttwo{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 48%;
     justify-content: center;
+    margin-top: 1%;
 }
 
 .textone{
     display: flex;
-    height: 100%;
+    height: 48%;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2%;
+}
+
+.textcontainer{
+    width: 35vw;
+    margin-left: 20px;
 }
 
 .text {
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: space-between; /* Distribute space evenly */
-    padding-top: 5px;
-    padding-bottom: 10px;
-    max-height: 350px;
+    justify-content: space-evenly; /* Distribute space evenly */
+    height: 230px;
 }
 
 .baby{
     display: flex;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+    width: 210px;
+    height: 230px;
 }
 
 .img_profile {
-    height: clamp(12rem, calc(9vw + 1rem), 18rem);
+    height: 210px;
     aspect-ratio: 1 / 1;
     display: flex; /* Ensure content alignment */
     align-items: center;
-    overflow: hidden; /* Clip overflowing content */
 }
 
 .img_profile img {
@@ -116,17 +118,14 @@ h3{
 
 h1{
     font-weight: 800;
-    background: linear-gradient(to bottom, #9d9d87, #f0e0b2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: clamp(2.1rem, calc(3vw + 1rem), 6rem);
+    color: #7d9c66;
+    font-size: clamp(0.9rem, calc(1.5vw + 1.8rem), 4.1rem);
     margin: 0 0;
     line-height: 1;
 }
 
 h2{
-    font-size: clamp(1.1rem, calc(1.5vw + 0.5rem), 3rem);
-    font-weight: 500;
+    font-size: clamp(0.9rem, calc(1.5vw + 0.6rem), 2.6rem);
 }
 
 .containerforcontainer{
@@ -138,18 +137,18 @@ h2{
 .container{
     margin-top: 50px;
     width: 88%;
-    padding: 30px;
-    background-color: #f0e0b2;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    padding: 20px;
+    background-color: #d0c7c25b;
+    border-radius: 10px;
     margin-bottom: 50px;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    max-width: calc(550px * 3);
     justify-content: center; /* Centers last row */
-    gap: 16px;
+    gap: 20px;
 }
 
 .items img{
@@ -166,7 +165,7 @@ h2{
 .container img {
     width: 100%; /* Responsive width */
     aspect-ratio: 53%; /* Adjust this based on your desired proportion */
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 @media (hover: hover){
@@ -196,16 +195,39 @@ h2{
         height: 100%;        /* Cover the entire height of the container */
         align-items: center; /* Center text vertically */
         justify-content: center; /* Center text horizontally */
-        color: #f0e0b2;
+        color: #f5f2ea;
         font-size: clamp(2rem, calc(2vw + 0.5rem), 2.5rem); /* Adjust font size */
         opacity: 0;           /* Hidden by default */
         transition: opacity 0.3s ease-in-out;
-        background-color: #9d9d87f3; /* Semi-transparent overlay */
+        background-color: rgba(210, 180, 140, 0.925); /* Semi-transparent overlay */
         text-align: center;
-        border-radius: 10px;
+        border-radius: 5px;
         text-decoration: none;
         padding: 0 5%;
         box-sizing: border-box;
+    }
+
+    .contactbox{
+        
+    }
+
+    .picture{
+        width: 500px;
+        height: 700px;
+        background-color: black;
+    }
+
+    .linkdiv{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    .linklogo{
+        filter: grayscale(100%) brightness(50%) contrast(100%);
+        height: 30px;
+        width: 30px;
+        opacity: 0.5;
     }
 
     .items:hover .image-link {
@@ -224,6 +246,10 @@ h2{
         box-shadow: none; /* Removes the shadow */
         margin-top: 0;
         
+    }
+
+    .linkdiv{
+        display: none !important;
     }
 
     .items {
@@ -245,13 +271,13 @@ h2{
     .image-container img {
         width: 100%;
         aspect-ratio: 53%; /* You can adjust this to the desired proportion */
-        border-radius: 10px;
+        border-radius: 5px;
     }
     
     .image-text {
         height: 100%;
         width: 100%;
-        background-color: #f0e0b2; /* Choose a color for the background of the text box */
+        background-color: tan; /* Choose a color for the background of the text box */
         text-align: center;
         border-radius: 0px 0px 10px 10px; /* Optional: rounds the top corners of the text box */
         margin-top: -15px; /* Adds space between the image and the box */
@@ -266,7 +292,7 @@ h2{
         text-decoration: none;
         width: 95%;
         height: 100%; /* Ensure it fills the parent container */
-        color: #7a7a69; /* Set text color */
+        color: #f5f2ea; /* Set text color */
         font-weight: 600;
         font-size: clamp(1rem, calc(2vw + 0.5rem), 2rem); /* Adjust font size */
         margin: auto;
@@ -278,41 +304,75 @@ h2{
     }
 }
 
-@media (max-width: 629px){
+@media (max-width: 640px){
     .container{
         background-color: transparent; /* Removes the background color */
         box-shadow: none; /* Removes the shadow */
         margin-top: 0;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
-    .textbaby{
-        margin-left: 20px;
-    }
-}
 
-@media (max-width: 520px) {
-    .textbaby{
-        margin-left: 10px;
+    .head{
+        height: 200px;
     }
-}
+    .text{
+        height: 200px;
+    }
+    .headcontent {
+        width: 100%;
+        max-width: 640px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+        margin: 0 !important;
+    }
 
-@media (max-width: 432px) {
-    /* Ensure the images adjust properly in smaller screens */
+    .textcontainer{
+        width: 100% !important;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px !important;
+        margin-right: 20px;
+    }
     .baby{
         display: none;
     }
+    .image_profile{
+        display: none;
+    }
+    h1 {
+        font-size: 65px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 540px) {
+    /* Ensure the images adjust properly in smaller screens */
     .textbaby{
-        margin-right: 10px;
-        margin-left: 10px;
         text-align: center;
     }
     h1{
         font-size: 50px;
     }
+    h2{
+        font-size: 20px;
+    }
 }
 
-@media (min-width: 1900px){
-    .container {
-        grid-template-columns: repeat(auto-fit, minmax(555px, 1fr)); 
+@media (max-width: 1600px){
+    .textcontainer{
+        width: 50vw;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 930px){
+    .textcontainer{
+        width: 80vw;
+        margin-left: 20px;
     }
 }

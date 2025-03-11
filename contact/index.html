@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="../favicon.ico" />
+    <link href="../main.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navlinks">
+        <li class="nonactive"><a href="../">Home</a></li>
+        <li class="nonactive"><a href="../about">About Me</a></li>
+        <li class="active"><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contactbox">
+        <div class="picture">hello</div>
+        <div class="form">
+            <form id="contact-form">
+                <form action="../send_email.js" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required />
+                    <input type="email" id="email" name="email" placeholder="Your Email" required />
+                    <input type="subject" id="subject" name="subject" placeholder="subject" required />
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
