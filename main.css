@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-body{
-    font-family: inter;
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');body{
+    font-family: 'Google Sans', sans-serif;
     background-color: #713976;
     padding: 0;
     margin: 0;
 }
-
 
 .active a{
     color: #f5f2ea;
@@ -21,9 +19,10 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     width: 100%; 
-    height: 65px;
-    font-size: clamp(1.5rem, calc(1.1vw + 0.5rem), 2rem); /* Adjust font size */
+    height: 45px;
+    font-size: clamp(1.3rem, calc(1.2vw + 0.5rem), 2rem); /* Adjust font size */
 }
+
 .navlinks{
     list-style: none;
     display: flex;
@@ -41,11 +40,11 @@ h1, h2, h3 {
 }
 
 .navlinks li a:hover{
-    color: tan;
+    color: rgb(183, 183, 183);
 }
 
 .head{
-    background-color: #4a332d;
+    background-color: #520359;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -53,32 +52,11 @@ h1, h2, h3 {
     color: #f5f2ea;
 }
 
-h3{
-    font-size: clamp(0.9rem, calc(1vw + 0.6rem), 1.4rem);
-    font-weight: 400;
-}
-
 .headcontent {
     width: 88%;
     max-width: calc(550px * 3);
     display: flex;
     height: 100%;
-}
-
-.texttwo{
-    display: flex;
-    flex-direction: column;
-    height: 48%;
-    justify-content: center;
-    margin-top: 1%;
-}
-
-.textone{
-    display: flex;
-    height: 48%;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2%;
 }
 
 .textcontainer{
@@ -90,7 +68,6 @@ h3{
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: space-evenly; /* Distribute space evenly */
     height: 230px;
 }
 
@@ -116,18 +93,27 @@ h3{
     border-radius: 10px;
 }
 
-
 h1{
-    font-weight: 800;
-    color: #7d9c66;
+    color: rgb(80, 144, 108);
     font-size: clamp(0.9rem, calc(1.5vw + 1.8rem), 4.1rem);
-    margin: 0 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
     line-height: 1;
+    margin-top: -0.12em;
+    font-weight: 700;
 }
 
 h2{
     font-size: clamp(0.9rem, calc(1.5vw + 0.6rem), 2.6rem);
+    font-weight: 600;
+    color: rgb(202, 176, 144);
+}
+
+h3{
+    font-size: clamp(1rem, calc(1vw + 0.6rem), 1.4rem);
     font-weight: 500;
+    margin-top: 20px;
 }
 
 .containerforcontainer{
@@ -137,20 +123,19 @@ h2{
 }
 
 .container{
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: calc(550px * 3);
+    justify-content: center; /* Centers last row */
+    gap: 20px;
+    flex-shrink: 0;
+    margin-top: 20px;
     width: 88%;
+    min-width: 150px;
     padding: 20px;
     background-color: #d0c7c25b;
     border-radius: 10px;
     margin-bottom: 50px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    max-width: calc(550px * 3);
-    justify-content: center; /* Centers last row */
-    gap: 20px;
 }
 
 .items img{
@@ -168,6 +153,7 @@ h2{
     width: 100%; /* Responsive width */
     aspect-ratio: 53%; /* Adjust this based on your desired proportion */
     border-radius: 5px;
+    max-width: 500px;
 }
 
 @media (hover: hover){
@@ -198,7 +184,7 @@ h2{
         align-items: center; /* Center text vertically */
         justify-content: center; /* Center text horizontally */
         color: #f5f2ea;
-        font-size: clamp(2rem, calc(2vw + 0.5rem), 2.5rem); /* Adjust font size */
+        font-size: clamp(1.5rem, calc(2vw + 0.5rem), 2.3rem); /* Adjust font size */
         opacity: 0;           /* Hidden by default */
         transition: opacity 0.3s ease-in-out;
         background-color: rgba(210, 180, 140, 0.925); /* Semi-transparent overlay */
@@ -269,7 +255,7 @@ h2{
     .image-text {
         height: 100%;
         width: 100%;
-        background-color: tan; /* Choose a color for the background of the text box */
+        background-color:rgb(80, 144, 108); /* Choose a color for the background of the text box */
         text-align: center;
         border-radius: 0px 0px 10px 10px; /* Optional: rounds the top corners of the text box */
         margin-top: -15px; /* Adds space between the image and the box */
@@ -321,7 +307,7 @@ h2{
     }
 
     .textcontainer{
-        width: 100% !important;
+        width: 85% !important;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -598,6 +584,17 @@ button:hover {
     form{
         width: 60%;
     }
+    .textcontainer{
+    width: 80vw;
+    margin-left: 20px;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 700px){
@@ -613,12 +610,15 @@ button:hover {
     form{
         width: 70%;
     }
+     h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 28px;
+    }
 }
 
-@media (max-width: 550px){
-    .picture img{
-        display: none;
-    }
+@media (max-width: 600px){
     .contactboxbox{
         justify-content: center;
         
@@ -632,31 +632,33 @@ button:hover {
     form{
         width: 80%;
     }
+    h1{
+        font-size: 40px;
+        padding-top: 15px;
+    }
+    h2{
+        font-size: 25px;
+    }
 }
 
-@media (max-width: 540px) {
-    /* Ensure the images adjust properly in smaller screens */
-    .textbaby{
-        text-align: center;
-    }
+@media (max-width: 400px){
     h1{
-        font-size: 50px;
+        font-size: 32px;
+        padding-top: 15px;
     }
     h2{
         font-size: 20px;
+    }
+    h3{
+        padding-top: 0px;
+        font-size: 15px;
+        margin-top: 8px;
     }
 }
 
 @media (max-width: 1600px){
     .textcontainer{
         width: 50vw;
-        margin-left: 20px;
-    }
-}
-
-@media (max-width: 930px){
-    .textcontainer{
-        width: 80vw;
         margin-left: 20px;
     }
 }
