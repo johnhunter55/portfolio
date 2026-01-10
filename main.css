@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');body{
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Rubik+Spray+Paint&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Liu+Jian+Mao+Cao&family=Lobster&family=Rubik+Spray+Paint&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
     font-family: 'Google Sans', sans-serif;
-    background-color: #713976;
+    background-color: #e3c2cd;
     padding: 0;
     margin: 0;
 }
 
 .active a{
-    color: #f5f2ea;
+    color: #724f53;
 }
 
 h1, h2, h3 {
@@ -20,7 +23,7 @@ h1, h2, h3 {
     align-items: center;
     width: 100%; 
     height: 45px;
-    font-size: clamp(1.3rem, calc(1.2vw + 0.5rem), 2rem); /* Adjust font size */
+    font-size: clamp(1.3rem, calc(1.2vw + 0.5rem), 1.8rem); /* Adjust font size */
 }
 
 .navlinks{
@@ -31,20 +34,20 @@ h1, h2, h3 {
 }
 
 .nonactive a{
-    color: #d0c7c2;
+    color: #515b43;
 }
 
 .navlinks li a {
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .navlinks li a:hover{
-    color: rgb(183, 183, 183);
+    color: #6a755a;
 }
 
 .head{
-    background-color: #520359;
+    background-color: #be8b98;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -94,26 +97,29 @@ h1, h2, h3 {
 }
 
 h1{
-    color: rgb(80, 144, 108);
-    font-size: clamp(0.9rem, calc(1.5vw + 1.8rem), 4.1rem);
+    color: #6a4649;
+    font-size: clamp(0.9rem, calc(2vw + 2rem), 4rem);
     margin: 0;
     padding: 0;
-    padding-top: 20px;
+    padding-top: 13px;
+    padding-bottom: 10px;
     line-height: 1;
     margin-top: -0.12em;
-    font-weight: 700;
+    font-weight: bold;
+    font-family: Liu Jian Mao Cao;
 }
 
 h2{
-    font-size: clamp(0.9rem, calc(1.5vw + 0.6rem), 2.6rem);
+    font-size: clamp(0.9rem, calc(1.5vw + 0.6rem), 2.2rem);
     font-weight: 600;
-    color: rgb(202, 176, 144);
+    color: #ebcdaf;
+    
 }
 
 h3{
-    font-size: clamp(1rem, calc(1vw + 0.6rem), 1.4rem);
+    font-size: clamp(1rem, calc(1vw + 0.6rem), 1.2rem);
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .containerforcontainer{
@@ -133,7 +139,7 @@ h3{
     width: 88%;
     min-width: 150px;
     padding: 20px;
-    background-color: #d0c7c25b;
+    background-color: #e4d8da;
     border-radius: 10px;
     margin-bottom: 50px;
 }
@@ -183,11 +189,11 @@ h3{
         height: 100%;        /* Cover the entire height of the container */
         align-items: center; /* Center text vertically */
         justify-content: center; /* Center text horizontally */
-        color: #f5f2ea;
-        font-size: clamp(1.5rem, calc(2vw + 0.5rem), 2.3rem); /* Adjust font size */
+        color: #e3c2a1;
+        font-size: clamp(1.5rem, calc(2vw + 0.5rem), 1.5rem); /* Adjust font size */
         opacity: 0;           /* Hidden by default */
         transition: opacity 0.3s ease-in-out;
-        background-color: rgba(210, 180, 140, 0.925); /* Semi-transparent overlay */
+        background-color:#515b43;/* Semi-transparent overlay */
         text-align: center;
         border-radius: 5px;
         text-decoration: none;
@@ -255,7 +261,7 @@ h3{
     .image-text {
         height: 100%;
         width: 100%;
-        background-color:rgb(80, 144, 108); /* Choose a color for the background of the text box */
+        background-color:#515b43; /* Choose a color for the background of the text box */
         text-align: center;
         border-radius: 0px 0px 10px 10px; /* Optional: rounds the top corners of the text box */
         margin-top: -15px; /* Adds space between the image and the box */
@@ -270,9 +276,9 @@ h3{
         text-decoration: none;
         width: 95%;
         height: 100%; /* Ensure it fills the parent container */
-        color: #f5f2ea; /* Set text color */
+        color: #e3c2a1; /* Set text color */
         font-weight: 600;
-        font-size: clamp(1rem, calc(2vw + 0.5rem), 2rem); /* Adjust font size */
+        font-size: clamp(1rem, calc(2vw + 0.5rem), 1.5rem); /* Adjust font size */
         margin: auto;
     }
     
@@ -321,7 +327,7 @@ h3{
         display: none;
     }
     h1 {
-        font-size: 65px;
+        font-size: 80px;
     }
     h2 {
         font-size: 32px;
@@ -611,7 +617,7 @@ button:hover {
         width: 70%;
     }
      h1{
-        font-size: 45px;
+        font-size: 50px;
     }
     h2{
         font-size: 28px;
@@ -633,11 +639,15 @@ button:hover {
         width: 80%;
     }
     h1{
-        font-size: 40px;
-        padding-top: 15px;
+        font-size: 50px;
+        padding-top: 10px;
+        padding-bottom: 5px;
     }
     h2{
         font-size: 25px;
+    }
+    h3{
+        padding-top: 0px;
     }
 }
 
